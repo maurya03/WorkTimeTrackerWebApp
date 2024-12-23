@@ -1,0 +1,21 @@
+ .catDropdown,
+ .subCatDropdown {
+   margin-left: 0rem;
+   padding: 4px;
+   width: 100%;
+   height: 45px;
+ }
+
+ .textField {
+   font-size: small;
+   width: 7vh;
+   text-align: center;
+ }
+
+ .textField :focus {
+   font-size: small;
+ }
+
+ .taskField {
+   width: 100%;
+ }

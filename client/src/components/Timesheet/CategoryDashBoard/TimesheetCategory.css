@@ -1,0 +1,144 @@
+.dashboardView {
+    background-color: #ffffff;
+    margin-top: 10px;
+    border: 1px solid rgb(145, 144, 144);
+    width: 100%;
+    height: calc(100% - 110px);
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: auto;
+    max-width: 90vw;
+}
+
+.title {
+    color: black;
+    font-weight: 600;
+    font-size: 25px;
+    width: 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: default;
+}
+
+.contentHeader {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.contentHeaderButtons {
+    margin-left: 10px;
+    background-color: rgba(23, 7, 43);
+    border: 1px solid rgba(23, 7, 43);
+    &:first-child {
+        margin-left: 0;
+    }
+    &:hover {
+        background-color: rgb(33, 11, 122);
+    }
+}
+.clientContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+.topBottomMargin {
+    margin: 15px 0;
+}
+
+.contentBox {
+    width: 1800px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.actionButton {
+    position: sticky;
+    font-size: 15px;
+    font-weight: 500;
+    color: #002d36;
+    background-color: #99c6cf;
+    border-radius: 6px;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    &:hover {
+        color: #ffffff;
+        background-color: #002d36;
+    }
+}
+.table {
+    margin: 0 25px 0;
+    border: 1px solid lightgray;
+    height: calc(100% - 85px);
+    span[role="columnheader"] {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: inherit;
+        display: inline-block;
+        color: #fff;
+    }
+}
+.table p {
+    margin-bottom: 0;
+}
+.table > div {
+    box-shadow: none;
+}
+.table > div > div {
+    height: calc(100% - 53px);
+}
+.table > div > table {
+    border-top: 1px solid rgba(224, 224, 224, 1);
+}
+.noRecords {
+    text-align: center;
+    margin: 45px 0;
+    font-size: 24px;
+}
+
+.scrollClient {
+    width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    display: flex;
+    align-items: center;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+.scrollItems {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(23, 7, 43);
+    border-radius: 4px;
+}
+.scrollItemActions {
+    display: flex;
+    border-left: 1px solid rgba(23, 7, 43);
+    padding: 6px 0;
+    width: 70px;
+    justify-content: space-evenly;
+}
+.scrollItemActions span {
+    cursor: pointer;
+}
+.rowActionButtons {
+    display: flex;
+}
+.clientButton {
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 4px 0 0 4px;
+}
+button[class="~btn-primary"] {
+    background-color: rgba(23, 7, 43);
+}

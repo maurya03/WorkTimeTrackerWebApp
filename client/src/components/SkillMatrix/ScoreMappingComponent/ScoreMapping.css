@@ -1,0 +1,129 @@
+.dashboardContainer {
+    margin: 40px;
+    width: calc(100% - 65px);
+}
+
+.dashboardHeading {
+    color: rgb(33, 11, 122);
+}
+
+.dataContainer {
+    background-color: #f1f1f1;
+    border: 1px solid #f2f2f2;
+    height: calc(100% - 40px);
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.selectionScroll {
+    margin-top: 20px;
+}
+
+.selectionScroll:first-child {
+    margin-top: 0;
+}
+
+.selectionScrollHeading {
+    font-size: 18px;
+}
+
+.selectionScrollList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    padding: 0 30px;
+}
+
+.selectionScrollLeftArrow,
+.selectionScrollRightArrow {
+    position: absolute;
+    display: inline-block;
+    height: 16px;
+    width: 10px;
+    top: 50%;
+    margin-top: -8px;
+    cursor: pointer;
+}
+
+.selectionScrollLeftArrow {
+    transform: rotate(180deg);
+    left: 0;
+}
+
+.selectionScrollRightArrow {
+    right: 0;
+}
+
+.selectionScrollItems {
+    border: rgba(0,0,0, 0.4);
+    display: inline-block;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 130px;
+    height: 45px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    cursor: pointer;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    height: 40px;
+
+}
+.cell {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.arrowDown {
+    position: relative;
+    bottom: 8px;
+}
+.table {
+    margin: 0 25px 0;
+    border: 1px solid lightgray;
+    height: calc(100% - 55px);
+    span[role="columnheader"] {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+        display: inline-block;
+        color: #fff;
+    }
+}
+.table p {
+  margin-bottom: 0;
+}
+.table > div {
+    box-shadow: none;
+}
+.table > div > div:nth-child(1) {
+  min-height: 40px;
+}
+.table > div > div:nth-child(2) {
+  height: calc(100% - 94px);
+}
+.table > div > table {
+  border-top: 1px solid rgba(224, 224, 224, 1);
+}
+.table > div > div > div > div {
+    overflow-y: unset !important;
+}
+.table > div > div > div > div thead {
+    position: sticky;
+    top: 0;
+}
+.noRecords {
+  text-align: center;
+  margin: 45px 0;
+  font-size: 24px;
+}

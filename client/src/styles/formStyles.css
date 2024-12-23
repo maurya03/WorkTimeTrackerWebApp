@@ -1,0 +1,78 @@
+.formDrawer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.formContainer {
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 110px);
+    overflow-y: scroll;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgba(23, 7, 43);
+}
+
+.formInput,
+.description {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 400px;
+}
+.description {
+    width: 800px;
+}
+
+.submitButton {
+    border: none;
+    color: #000000;
+    text-align: center;
+    margin: 10px 35px 10px 0;
+}
+.cancelButton {
+    border: none;
+    color: #000000;
+    text-align: center;
+    margin: 10px 0 10px 26px;
+}
+.errorMessages {
+    margin: 0 0 10px;
+    color: red;
+}
+.footer {
+    border-top: 1px solid #d3d3d3;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    right: 0;
+    margin-top: 50px;
+    background: #ffffff;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 3px solid #ccc;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #fff;
+}

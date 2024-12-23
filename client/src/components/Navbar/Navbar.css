@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap");
+
+.Navbar {
+    background: rgba(23, 7, 43);
+    height: 50px;
+    display: flex;
+    color: aliceblue;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logoImage {
+    height: 40px;
+    width: 45px;
+    border-radius: 60%;
+}
+
+.navbarBrand,
+.navbarBrand a {
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.Left_Navbar_Headings {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.NavbarItems {
+    padding: 0 25px;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.headings,
+.headings a {
+    display: inline;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 6px;
+    margin-left: 6px;
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.headings a:hover {
+    color: #b9a2c7;
+}
+
+.right_navbarHeadings {
+    display: inline-flex;
+    margin-left: 27.3rem;
+    position: absolute;
+    justify-content: end;
+}
+
+.right_navbarHeadingsBeforeLogin {
+    display: inline-flex;
+    margin-left: 56rem;
+}
+.companyLogo {
+    margin-right: 10px;
+}
+.companyLogoImg {
+    height: 35px;
+}
+.logoutIcon{
+    cursor: pointer;
+}
+.linkButton{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}

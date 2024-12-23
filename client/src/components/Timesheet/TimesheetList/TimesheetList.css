@@ -1,0 +1,155 @@
+.contentHeader {
+  margin: 20px 0 15px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .createTimesheet {
+  color: white !important;
+  text-decoration: none;
+} */
+
+/* .m10 {
+  margin-right: 10px;
+  background-color: rgba(23, 7, 43);
+  border: 1px solid rgba(23, 7, 43);
+} */
+
+.title {
+  color: black;
+  font-weight: 600;
+  font-size: 25px;
+  width: 50%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: default;
+}
+
+.container {
+  background-color: #ffffff;
+  height: auto;
+  overflow-x: auto;
+  overflow-y: auto;
+  max-width: 110vw;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  margin: 20px;
+  padding-left: calc(var(--bs-gutter-x)*.5);
+  padding-right: calc(var(--bs-gutter-x)*.5);
+  width: 92%;
+  /* margin-bottom: 100px; */
+  position: relative;
+}
+
+.footer {
+  left: 65px;
+  width: 96%;
+  background-color: lightgray;
+  padding: 0 100px 22px 25px;
+  display: flex;
+  position: fixed;
+  flex-wrap: wrap;
+  justify-content: end;
+  bottom: 0;
+}
+
+.approveButton {
+  position: relative;
+  top: 10px;
+  width: 120px;
+
+}
+
+.rejectButton {
+  position: relative;
+  top: 10px;
+  width: 120px;
+  right: 10px;
+}
+
+.containerTable {
+  table-layout: fixed;
+  overflow-x: "auto";
+  max-width: "100%";
+}
+
+.containerTable span[role="columnheader"] {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: inherit;
+  display: inline-block;
+  color: #fff;
+}
+
+.containerTable table tr th {
+  padding: 6px 6px !important;
+  z-index: 2 !important;    
+}
+.containerTable table tr td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 4px;
+}
+
+.containerTable p {
+  margin-bottom: 0;
+}
+
+.containerTable>div {
+  box-shadow: none;
+}
+
+.containerTable>div>div:nth-child(1) {
+  min-height: 40px;
+}
+
+.containerTable>div>div:nth-child(2) {
+  height: calc(100% - 94px);
+}
+
+.containerTable>div>table {
+  border-top: 1px solid rgba(224, 224, 224, 1);
+}
+
+.table>div>div>div>div {
+  overflow-y: unset !important;
+}
+
+.table>div>div>div>div thead {
+  position: sticky;
+  top: 0;
+  /* padding: 6px 10px !important; */
+}
+
+@media screen and (max-width: "900px") {
+  /* .containerTable{
+    max-width: "100vw";
+  } */
+}
+
+.select {
+  width: 400px;
+}
+
+.clientLabel {
+  font-weight: 500;
+}
+.alertStyle {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+.name {
+  color: black;
+  font-weight: 500;
+  font-size: 19px;
+  width: 50%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: default;
+}

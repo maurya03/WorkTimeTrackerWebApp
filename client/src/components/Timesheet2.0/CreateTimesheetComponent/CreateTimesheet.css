@@ -1,0 +1,63 @@
+.catDropdown {
+    margin-left: 0rem;
+    width: 132px;
+    height: 45px;
+  }
+  .subCatDropdown {
+    margin-left: 0rem;
+    padding: 4px;
+    width: 200px;
+    height: 45px;
+  }
+  .textField {
+    font-size: small;
+    width: 7vh;
+    text-align: center;
+  }
+  .textField :focus{
+    font-size: small; 
+  }
+  .taskField{
+    width: 100%;   
+  }
+  .table {
+    margin: 0 25px 0;
+    /* border: 1px solid lightgray; */
+    height: calc(100% - 85px);
+  
+    span[role="columnheader"] {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: inline-block;
+      color: #fff;
+      width: 36px;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  
+  .table p {
+    margin-bottom: 0;
+  }
+  
+  .table>div {
+    box-shadow: none;
+  }
+  
+  .table>div>div:nth-child(1) {
+    min-height: 40px;
+  }
+  
+  .table>div>div:nth-child(2) {
+    height: calc(100% - 74px);
+  }
+  
+  .table>div>table {
+    border-top: 1px solid rgba(224, 224, 224, 1);
+  }
+  .header{
+    margin: 20px 0 0 0;
+    font-size: 30px;
+    font-weight: 500
+  }
