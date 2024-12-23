@@ -1,0 +1,37 @@
+.drawerOverlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.drawer_container {
+    z-index: 1;
+    background-color: #ffffff;
+    width: 70%;
+    position: absolute;
+    height: calc(100% - 50px);
+    overflow: hidden;
+    top: 50px;
+    right: -70%;
+    border: 1px solid #d3d3d3;
+    transition: right 0.5s ease-out;
+}
+.title {
+    color: black;
+    font-weight: 600;
+    font-size: 25px;
+}
+.drawerHeader{
+    padding: 10px 20px;
+    align-items: center;
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.closeIcon {
+    cursor: pointer;
+}

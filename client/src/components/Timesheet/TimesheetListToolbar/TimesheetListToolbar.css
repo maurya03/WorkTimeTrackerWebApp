@@ -1,0 +1,121 @@
+.toolbarComponents {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clientSelector {
+    width: 35%;
+    position: relative;
+    bottom: 11px;
+    left: 5px;
+}
+
+.hideClient {
+    display: none;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    cursor: pointer;
+    margin-left: 10px;
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 2;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.dayPickerLabel {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.dayPicker {
+    color: #040a1e;
+    width: 300px;
+    height: 320px;
+    z-index: 3;
+    position: absolute;
+    background-color:#FFFFFF;
+    border: 2px solid #110f0f;
+    border-radius: 5px;
+    padding: 5px;
+    align-items: center;
+    top: 30px;
+}
+.search {
+    width: 100%;
+    position: relative;
+    right: 15px;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .searchTerm {
+        width: 100%;
+    border: 2px solid #000000;
+    /* border-right: none; */
+    padding: 5px;
+    height: 36px;
+    border-radius: 6px 0 0 6px;
+    outline: none;
+    color: #000000;
+  }
+
+  .searchTerm:focus{
+    color: #000000;
+  }
+
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #000000;
+    background: #000000;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }

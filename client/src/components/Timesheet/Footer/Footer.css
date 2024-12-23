@@ -1,0 +1,38 @@
+.saveButton {
+    position: relative;
+    top: 10px;
+    width: 120px;
+}
+.submitButton {
+  margin-right: 10px;
+  background-color: rgba(23, 7, 43);
+  border: 1px solid rgba(23, 7, 43);
+}
+.cancelButton {
+    right: 20px;
+  position: relative;
+  top: 10px;
+  width: 120px;
+}
+.footerForDetail {
+    left: 65px;
+    width: 100%;
+    background-color: lightgray;
+    padding: 0 100px 22px 25px;
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    justify-content: end;
+    bottom: 0;
+}
+.footerForList{
+  /* left: 65px; */
+  width: 100%;
+
+  padding: 0 0px 22px 25px;
+  display: flex;
+  /* position: fixed; */
+  flex-wrap: wrap;
+  justify-content: end;
+  bottom: 25%;
+}

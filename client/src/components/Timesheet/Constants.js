@@ -1,0 +1,29 @@
+export const timesheet_approved_success = "Timesheet approved successfully!";
+export const timesheet_reject_success = "Timesheet rejected successfully!";
+export const timesheet_failed_error = "Error in updating timesheet!";
+export const alertSuccess = "success";
+export const alertError = "error";
+export const alertWarning = "warning";
+export const approved = "Approved";
+export const rejected = "Rejected";
+export const pending = "Pending";
+export const create_timesheet = "Create/Edit Timesheet";
+export const create_draft = "Create/Draft Timesheet";
+export const create_timesheet_behalf = "Create Timesheet on Behalf";
+export const reject_timesheet = "Reject Timesheet";
+export const approve_timesheet = "Approve Timesheet";
+export const admin = "Admin";
+export const successStatusCode = "200";
+export const updateStatusCode = "202";
+
+export const select_project = "Select Project";
+export const project = "Project";
+export const task_title = "Task title";
+export const category = "Category";
+export const subCategory = "SubCategory";
+export const submittted_successfully = "Submittted successfully";
+export const info = "info";
+export const create_edit_timesheet = "Create/Edit Timesheet";
+export const employee = "Employee";
+export const select_client_on_behalf =
+    "Please select only one client to create timesheet on behalf";

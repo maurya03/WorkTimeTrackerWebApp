@@ -1,0 +1,155 @@
+.menuContainer {
+    position: relative;
+    width: calc(100% - 200px);
+}
+
+.menuTitleContainer {
+    display: flex;
+}
+
+.menuTitle {
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    border-right-color: rgb(145, 144, 144);
+    padding: 0 10px;
+    height: 35px;
+    position: relative;
+    z-index: 5;
+    &:last-child {
+        border-right: none;
+    }
+}
+
+.activeMenu {
+    background-color: #f1f1f1;
+    border: 1px solid rgb(145, 144, 144);
+    border-bottom: none;
+    &:last-child {
+        border-right: 1px solid rgb(145, 144, 144);
+    }
+}
+
+.heading {
+    margin: -2px 0 0;
+    font-size: 17px;
+}
+
+.menuExpandIcon {
+    cursor: pointer;
+}
+
+.menuListContainer {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-out;
+    width: calc(100% + 200px);
+    position: absolute;
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+    top: 35px;
+    z-index: 15;
+}
+
+.menuListContainerVisible {
+    height: 250px;
+    padding: 10px;
+    box-shadow: 2px 0 10px 2px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgb(145, 144, 144);
+}
+
+.menuList {
+    display: none;
+}
+
+.menuListVisible {
+    display: block;
+    height: 100%;
+}
+
+.menuItemsContainer {
+    display: flex;
+    height: 100%;
+}
+
+.menuListItems {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    background-color: #fff;
+    padding: 5px 5px;
+    overflow: auto;
+}
+
+.categoryMenuList {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.categoryMenuList .menuItem {
+    cursor: pointer;
+    height: 36px;
+    margin-right: 10px;
+    width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.categoryMenuList .menuItem:hover,
+.activeCategory {
+    box-shadow: 0px 0 7px 0px rgba(0, 0, 0, 0.6);
+}
+
+.subMenuListItems {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+    background-color: #fff;
+    padding: 5px 5px;
+    overflow: auto;
+}
+
+.menuItem,
+.subMenuItem {
+    margin-right: 2px;
+    background-color: #fff;
+    margin-bottom: 2px;
+    padding: 5px 10px;
+}
+
+.activeSubMenu {
+    color: red;
+}
+
+.menuItem {
+    cursor: default;
+    position: relative;
+}
+
+.activeMenuItem {
+    background-color: rgba(23, 7, 43);
+    color: #fff;
+}
+
+.activeMenuItem::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: -2px;
+    z-index: 1;
+    border: solid 9px transparent;
+    border-right-color: #fff;
+    margin-left: -18px;
+}
+
+.subMenuItem {
+    cursor: pointer;
+}
+
+.categorymMenuItemsContainer {
+    display: flex;
+    height: 100%;
+}

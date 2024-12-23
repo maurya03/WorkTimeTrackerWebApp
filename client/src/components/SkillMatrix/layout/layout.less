@@ -1,0 +1,76 @@
+@import "../../../theme/fonts.less";
+
+html, body, .container-fluid, .full-height, #main {
+    height: 100%;
+    background-color: #071218;
+}
+
+.full-height {
+  overflow-y: hidden;
+}
+
+.noShow {
+    display: none;
+}
+
+header {
+    height: 40px;
+}
+
+.main {
+    height: calc(~'100% - 40px');
+
+
+    .col-md-3.leftPanel{
+        border-right:4px solid #7599a8;
+    }
+
+    .leftPanel,
+    .appPanel {
+        height: 100%;
+        overflow-y: hidden;
+       padding:0;
+    }
+
+    .leftPanel {
+        background-color: white;
+        overflow-x: hidden;
+
+    }
+
+    .appPanel {
+        background-color: #E7E3E7;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main {
+
+    }
+
+    .bottomVisible {
+        height: calc(~'100% - 178px');
+    }
+
+
+    .drawers {
+        min-height: 138px;
+        border-top: 3px solid;
+        border-color: #7599A8;
+        background-color: white;
+        margin:auto -15px;
+    }
+}
+@media   (max-device-width : 1200px) {
+    .col-md-3.leftPanel {
+        min-width: 320px;
+    }
+
+    .appPanel {
+       min-width: calc(~'100% - 320px');
+       width:68%;
+       &.col-sm-12{      
+           width: 100%;
+       }
+    }
+}

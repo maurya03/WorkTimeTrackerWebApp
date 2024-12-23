@@ -1,0 +1,30 @@
+.viewTimesheet {
+    color: #000000;
+}
+
+.paginationHide {
+    display: none;
+}
+
+.pagination {
+    justify-content: center;
+    font-weight: 700;
+    display: flex;
+    margin: 20px;
+}
+
+.marginBottom {
+    margin-bottom: 100px;
+}
+
+.rowAlign{
+    text-align: center;
+    width: 55%;
+}
+.rowEllipse{
+    text-align: center;
+    width: 85%;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

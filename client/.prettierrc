@@ -1,0 +1,6 @@
+{
+  "trailingComma": "none",
+  "tabWidth": 4,
+  "arrowParens": "avoid",
+  "bracketSpacing": true
+}

@@ -1,0 +1,282 @@
+.dashboardView{
+  background-color: #ffffff;
+  margin-top: 10px;
+  border: 1px solid rgb(145, 144, 144);
+  width: 100%;
+  height: calc(100% - 110px);
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: auto;
+  max-width: 90vw;
+}
+
+.title {
+color: black;
+font-weight: 600;
+font-size: 25px;
+width: 50%;
+text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
+cursor: default;
+}
+
+.contentHeader {
+  display: flex;
+  align-items: center;
+  margin-top:10px;
+  justify-content: space-between;
+}
+
+.contentHeaderButtons {
+  margin-left: 10px;
+  background-color: rgba(23, 7, 43);
+  border: 1px solid rgba(23, 7, 43);
+  &:first-child {
+    margin-left: 0;
+  }
+  &:hover {
+    background-color: rgb(33, 11, 122);
+  }
+}
+.clientContainer {
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #FFFFFF;
+}
+.topBottomMargin {
+margin: 15px 0;
+}
+
+.contentBox {
+width: 1800px;
+display: flex;
+align-items: center;
+gap: 40px;
+}
+
+.card {
+width: 200px;
+height: 200px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.cardp {
+font-size: 70px;
+font-weight: 600;
+color: #ffffff;
+opacity: 0.4;
+}
+
+.action-btns {
+display: flex;
+align-items: center;
+gap: 60px;
+margin-top: 50px;
+}
+
+.actionButton {
+position: sticky;
+font-size: 15px;
+font-weight: 500;
+color: #002d36;
+background-color: #99c6cf;
+border-radius: 6px;
+padding: 10px 25px;
+border: none;
+cursor: pointer;
+transition: all 0.5s ease;
+&:hover {
+    color: #ffffff;
+    background-color: #002d36;
+  }
+}
+.table {
+  margin: 0 25px 0;
+  border: 1px solid lightgray;
+  height: calc(100% - 85px);
+  span[role="columnheader"] {
+      white-space: nowrap;
+      width: inherit;
+      display: inline-block;
+      color: #fff;
+  }
+}
+.table p {
+margin-bottom: 0;
+}
+.table > div {
+  box-shadow: none;
+}
+.table > div > div:nth-child(1) {
+  min-height: 40px;
+}
+.table > div > div:nth-child(2) {
+  height: calc(100% - 94px);
+}
+.table > div > table {
+border-top: 1px solid rgba(224, 224, 224, 1);
+}
+.noRecords {
+  text-align: center;
+  margin: 45px 0;
+  font-size: 24px;
+}
+.employeeTable {
+height: calc(100% - 210px);
+}
+.scrollClient{
+width: 100%;
+overflow-x: scroll;
+scroll-behavior: smooth;
+display: flex;
+align-items: center;
+
+&::-webkit-scrollbar{
+    display: none;
+}
+}
+.scrollItems {
+display: flex;
+align-items: center;
+border: 1px solid rgba(23, 7, 43);
+border-radius: 4px;
+}
+.scrollItemActions {
+display: flex;
+border-left: 1px solid rgba(23, 7, 43);
+padding: 6px 0;
+width: 70px;
+justify-content: space-evenly;
+}
+.scrollItemActions span{
+cursor: pointer;
+}
+.rowActionButtons{
+display: flex;
+}
+.clientButton{
+width:150px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+border-radius: 4px 0 0 4px;
+}
+button[class="~btn-primary"] {
+background-color: rgba(23, 7, 43);
+}
+.clientTeamContainer {
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: #ffffff;
+margin: 0 28px 0 24px;
+padding: 15px;
+}
+.heading{
+margin: 10px 20px 5px;
+font-size: 15px;
+}
+.buttonBlue{
+background-color: #18042c;
+color:#ffffff;
+}
+.buttonWhite{
+background-color:#ffffff;
+color:#18042c
+}
+.tableHeading {
+margin-top: 10px;
+font-weight: 500;
+padding-left: 25px;
+}
+.buttonColumn{
+  display: 'flex';
+  flex-direction: column;
+  width: 15%;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+.inButton{
+  width :100%;
+  margin-top: 7px;
+
+}
+.container1{
+  display:flex;
+  margin-top: 20px;
+}
+
+.clientdropdown {
+  padding: 4px;
+  cursor: pointer;
+  background-color: beige;
+  width: 247px;
+  margin-left: 20px;
+}
+
+.hide{
+  display: none;
+}
+
+.dependentContainer {
+  min-width: 300px;
+  display: flex;
+}
+
+.dropdown{
+  margin: 10px;
+  margin-left: 2rem;
+  padding: 4px;
+}
+
+.contentHeader1 {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.label {
+  margin: 10px;
+  padding: 3px;
+}
+
+.contentHeaderButtons1 {
+  margin-left: 450px;
+  /* margin-right: 50px; */
+  background-color: rgba(23, 7, 43);
+  border: 1px solid rgba(23, 7, 43);
+  &:first-child {
+      margin-left: 0;
+  }
+  &:hover {
+      background-color: rgb(33, 11, 122);
+  }
+}
+
+.alertStyle {
+  position: absolute;
+  z-index: 2;
+  width: 85%;
+}
+
+.container {
+  background-color: #ffffff;
+  height: auto;
+  overflow-x: auto;
+  overflow-y: auto;
+  max-width: 110vw;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  margin: 20px;
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  width: 92%;
+  position: relative;
+  padding: "0px";
+}

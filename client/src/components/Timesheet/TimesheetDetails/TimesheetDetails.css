@@ -1,0 +1,336 @@
+.dependentContainer {
+  min-width: 300px;
+  display: flex;
+}
+
+.team_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  height: 100%;
+}
+
+.catDropdownWithError {
+  margin-left: 0rem;
+  width: 132px;
+  height: 45px;
+  border: 2px solid red;
+}
+
+.subCatDropdownWithError {
+  margin-left: 0rem;
+  padding: 4px;
+  width: 200px;
+  height: 45px;
+  border: 2px solid red;
+}
+
+.reportClass {
+  height: 1000px;
+  width: 1300px;
+}
+
+.panelWidth {
+  height: fit-content !important;
+}
+
+.dashboardView {
+  background-color: #ffffff;
+  margin-top: 20px;
+  /* border: 1px solid rgb(145, 144, 144); */
+  /* height: calc(100% - 110px); */
+  height: 530px;
+  /* overflow-x: auto; */
+  /* Enable horizontal scrolling */
+  /* overflow-y: auto; */
+  max-width: 110vw;
+
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(var(--bs-gutter-x)*.5);
+  padding-right: calc(var(--bs-gutter-x)*.5);
+  width: 94%;
+}
+.deleteOutline{
+  margin-left: 55px;
+  cursor: pointer;
+}
+.catDropdown {
+  margin-left: 0rem;
+  width: 132px;
+  height: 45px;
+}
+
+.subCatDropdown {
+  margin-left: 0rem;
+  padding: 4px;
+  width: 200px;
+  height: 45px;
+}
+
+.title {
+  color: black;
+  font-weight: 600;
+  font-size: 25px;
+  width: 50%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: default;
+}
+
+.contentHeader {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.clientContainer {
+  display: flex;
+  position: relative;
+    margin-right: 40px;
+}
+
+.select {
+  /* height: 40px;
+  margin-top: 25px; */
+
+  height: 30px;
+  /* margin-top: 25px; */
+  top: 10px;
+  right: 12px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  margin-top: 5px;
+}
+
+
+table tr th {
+  text-align: left;
+}
+
+.custom-mat .MuiSelect-selectMenu {
+  width: 150px;
+}
+
+.MuiFormControl-root .css-1nrlq1o-MuiFormControl-root {
+  width: 150px !important;
+}
+
+.inButton {
+  width: 100%;
+  margin-top: 7px;
+}
+
+.container {
+  display: flex;
+  margin-top: 10px;
+}
+.container span[role="columnheader"] {
+  overflow: hidden;
+  white-space: nowrap;
+  width: inherit;
+  display: inline-block;
+  color: #fff;
+}
+
+.dayPickerLabel {
+  margin-left: 20px;
+
+}
+
+.approveButton {
+  margin-left: 10px;
+  padding: 10px;
+  float: left;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  border: 1px solid rgba(23, 7, 43);
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:hover {
+    background-color: rgba(23, 7, 43);
+    color: #FFFFFF;
+    border: 1px solid rgba(23, 7, 43);
+  }
+}
+
+.saveButton {
+  position: relative;
+  top: 10px;
+  width: 120px;
+}
+
+.submitButton {
+  right: 10px;
+  position: relative;
+  top: 10px;
+  width: 120px;
+}
+
+.cancelButton {
+  right: 20px;
+  position: relative;
+  top: 10px;
+  width: 120px;
+}
+
+.dayPicker {
+  color: #040a1e;
+  width: 300px;
+  height: 320px;
+  z-index: 3;
+  position: absolute;
+  background-color:#FFFFFF;
+  border: 2px solid #110f0f;
+  border-radius: 5px;
+  padding: 5px;
+  align-items: center;
+}
+
+.clientLabel {
+  top: 31px;
+    /* right: 20px; */
+    font-weight: 500;
+    position: relative;
+
+}
+
+.title {
+  color: black;
+  font-weight: 600;
+  font-size: 25px;
+  width: 50%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: default;
+}
+
+.contentHeader {
+  margin: 0px 0 20px 0px;;
+}
+.panelHeader {
+  margin: 0 0 15px 0px !important;
+}
+
+.adminControls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  left: 65px;
+  width: 96%;
+  background-color: lightgray;
+  padding: 0 100px 22px 25px;
+  display: flex;
+  position: fixed;
+  flex-wrap: wrap;
+  justify-content: end;
+  bottom: 0;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  cursor: pointer;
+}
+.toolbarRight {
+  visibility: hidden;;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 2;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.dateRow {
+  margin-top: -70px;
+}
+
+.textField {
+  font-size: small;
+  width: 7vh;
+  text-align: center;
+}
+.textField :focus{
+  font-size: small;
+}
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.clientSelector {
+  display: flex;
+  justify-content: left;
+  position: relative;
+  left: 20px;
+}
+
+.m10 {
+  margin-right: 10px;
+  background-color: rgba(23, 7, 43);
+  border: 1px solid rgba(23, 7, 43);
+}
+.createTimesheet {
+  color: white !important;
+  text-decoration: none;
+}
+.formControl {
+  left: 14px;
+  width: 275px;
+}
+
+.employeeLabel {
+  top: 30px;
+  position: relative;
+  /* bottom: 28px; */
+  font-weight: 500;
+  /* left: 75px; */
+}

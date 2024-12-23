@@ -1,0 +1,116 @@
+.contentHeaderButtons {
+    align-items: end;
+    margin-bottom: 2px;
+    background-color: rgba(23, 7, 43);
+    border: 1px solid rgba(23, 7, 43);
+    float: right;
+    &:hover {
+        background-color: rgb(33, 11, 122);
+    }
+}
+.table {
+    border: 1px solid lightgray;
+    height: calc(100% - 55px);
+    span[role="columnheader"] {
+        white-space: nowrap;
+        width: inherit;
+        display: inline-block;
+        color: #fff;
+    }
+}
+.table p {
+    margin-bottom: 0;
+}
+.table > div {
+    box-shadow: none;
+}
+.table > div > div:nth-child(1) {
+    min-height: 40px;
+}
+.table > div > div:nth-child(2) {
+    height: calc(100% - 94px);
+}
+.table > div > table {
+    border-top: 1px solid rgba(224, 224, 224, 1);
+}
+.table > div > div > div > div {
+    overflow-y: unset !important;
+}
+.table > div > div > div > div thead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.noRecords {
+    text-align: center;
+    margin: 45px 0;
+    font-size: 24px;
+}
+
+.calendar {
+    position: relative;
+    left: 15px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 2;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.dayPickerLabel {
+    margin-left: 10px;
+}
+
+.dayPicker {
+    color: #040a1e;
+    width: 300px;
+    height: 320px;
+    z-index: 3;
+    position: absolute;
+    background-color: #ffffff;
+    border: 2px solid #110f0f;
+    border-radius: 5px;
+    padding: 5px;
+    align-items: center;
+}
